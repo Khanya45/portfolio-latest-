@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+#first {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/* img {
+  filter: grayscale(100%);
+} */
+
+.navbar button {
+  background: rgba(187, 51, 51, 0.6);
+  border-radius: 0px;
+}
+
+#first {
+  box-sizing: border-box;
+  background: url(https://miro.medium.com/max/10368/0*M1QgnmpXAherbcbF);
+  background-size: cover;
+  flex-direction: column;
+  height: 100vh;
+  /* color: #b9b9b9; */
+  color: wheat;
+}
+#About_me {
+  /* text-transform: capitalize; */
+  /* padding: 10em 30em; */
+  padding: 5% 24%;
+  height: 100vh;
+}
+#About_me button {
+  border-radius: 20px;
+  /* margin: 5px; */
+  padding: 10px;
+  margin: 15px;
+  padding: 10px;
+  background: #457b9d;
+  color: black;
+  border: 1px solid rgb(12, 138, 68);
+}
+
+#About_me button:hover {
+  background: #3b6462;
+  transform: scale(0.9);
+}
+
+#About_me h1 {
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#About_me h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 70px;
+}
+#About_me h3 {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+
+#About_me p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.main {
+  background: #b08968;
+  width: 100%;
+}
+#socials {
+  display: none;
+  font-size: 2rem;
+}
+
+#side_bar {
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  max-width: 20%;
+  width: 100%;
+  height: 100%;
+  align-content: space-around;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  position: fixed;
+}
+
+#side_bar {
+  background: rgba(160, 125, 111, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #b9b9b9;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+#social-bar i {
+  color: #b9b9b9;
+}
+
+#socials i {
+  color: #b9b9b9;
+}
+#socials i:hover {
+  transform: scale(0.9);
+}
+
+#side_bar img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#side_bar h1 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#side_bar h2 {
+  margin-bottom: 20px;
+  /* text-transform: capitalize; */
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.links {
+  flex-direction: column;
+  /* text-transform: capitalize; */
+  display: flex;
+}
+
+.links a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #14213d;
+}
+
+h4 {
+  margin: 50px;
+  margin-bottom: 20px;
+}
+
+#social-bar {
+  display: block;
+}
+#social-bar i {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+.links a:hover {
+  color: blanchedalmond;
+}
+
+#social-bar i:hover {
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 1000px) {
+  #side_bar {
+    display: none;
+  }
+  #side_social i {
+    margin-top: 50em;
+  }
+
+  h4 {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+
+  #About_me h1 {
+    font-size: 3em;
+  }
+
+  #About_me h2 {
+    font-size: 2em;
+  }
+
+  #About_me {
+    padding: 12% 10% 0% 5%;
+  }
+
+  #socials {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 488) {
+  #About_me h2 {
+    font-size: 1.5 em;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+  }
+}
