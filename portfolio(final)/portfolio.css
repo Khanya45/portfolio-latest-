@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+#Portfolio {
+  justify-content: center;
+  align-items: center;
+}
+.card_container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10% 10%;
+  margin-left: 280px;
+}
+#Portfolio {
+  place-items: center;
+}
+#Portfolio h1 {
+  font-size: 350%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 5em;
+}
+.card {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 370px;
+  height: 370px;
+  margin: 1%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: cornsilk;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover a button {
+  visibility: visible;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.card a button {
+  padding: 10px;
+  width: 370px;
+  background: burlywood;
+  border: 1px solid #4e4545;
+  visibility: hidden;
+}
+
+.card a button:hover {
+  color: aliceblue;
+  background: rgb(86, 80, 129);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1172px) {
+  #Portfolio h1 {
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card_container {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 341px) {
+    .card:hover {
+      transform: scale(0.9);
+    }
+  }
+}

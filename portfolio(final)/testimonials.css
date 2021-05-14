@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+.main {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 80px;
+  margin-right: 0;
+  
+}
+
+.card {
+  width: 300px;
+  height: 270px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-direction: column;
+  background: rgb(46, 46, 83);
+  margin-bottom: 50px;
+}
+
+.imgbx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: darkcyan;
+}
+
+.imgbx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 35%;
+}
+
+.card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+
+section h1 {
+  font-size: 22px;
+  text-align: center;
+  font-size: 350%;
+  font-weight: bold;
+  padding-top: 1em;
+  color: black;
+} 
+
+
+/* #testimonial {
+  display: none;
+} */
+
